@@ -1,0 +1,27 @@
+/* Style du main ****************************************************************************************************************************/
+main{
+    background-image: url('../images/metalgearsolid.jpg'); /* Défini le chemin de l'image de background */
+    background-size: cover;                               /* Redimensionne l'image pour qu'elle tienne entierement dans l'element HTML qui la contient */
+    background-position: center top;                         /* Centre le fond d'ecran */
+    background-repeat: no-repeat;                       /* Indique qu'il ne faut pas repeter le fond */
+    height: 79vh;                                      /* Défini la hauteur du fond */
+    width: 100%;                                      /* Défini la largeur du fond */
+}
+/* Style Responsive **************************************************************************************************************************/
+@media only screen and (min-width:768px) and (max-width:1023px){ /* Défini le style responsive pour tablette */
+    .boutonRegister{
+        font-size: 1.25em; /* Défini la taille de la police */
+    }
+    .boutonLogin{
+        font-size: 1.25em; /* Défini la taille de la police */
+    }
+ }
+
+ @media only screen and (max-width:767px){ /* Défini le style responsive pour smartphone */
+    .boutonRegister{
+        font-size: 1.25em; /* Défini la taille de la police */
+    }
+    .boutonLogin{
+        font-size: 1.25em; /* Défini la taille de la police */
+    }
+ }
