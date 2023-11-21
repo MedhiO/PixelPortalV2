@@ -2,9 +2,9 @@
 main{
     background-image: url('../images/portal.jpg'); /* Défini le chemin de l'image de background */
     background-size: cover;                       /* Redimensionne l'image pour qu'elle tienne entierement dans l'element HTML qui la contient */
-    background-position: center top;             /* Centre le fond d'ecran */
+    background-position: center center;          /* Centre le fond d'ecran */
     background-repeat: no-repeat;               /* Indique qu'il ne faut pas repeter le fond */
-    height: 79vh;                              /* Défini la hauteur du fond */
+    height: 78vh;                              /* Défini la hauteur du fond */
     width: 100%;                              /* Défini la largeur du fond */
 }
 /* Style bouton accueil */

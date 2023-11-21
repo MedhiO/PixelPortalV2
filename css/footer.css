@@ -8,6 +8,7 @@ footer{
 /* Style Nous suivre */
 .nousSuivre{
     font-weight: bold; /* Défini la police en gras */
+    padding-top: 1vh; /* Défini le rembourrage vers le haut */
 }
 /* Style Responsive **************************************************************************************************************************/
 @media only screen and (min-width:768px) and (max-width:1023px){ /* Défini le style responsive pour tablette */

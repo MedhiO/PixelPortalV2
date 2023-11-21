@@ -1,0 +1,151 @@
+/* Style du main ****************************************************************************************************************************/
+main{
+    background-image: url('../images/skyrim.jpg'); /* Défini le chemin de l'image de background */
+    background-size: cover;                       /* Redimensionne l'image pour qu'elle tienne entierement dans l'element HTML qui la contient */
+    background-position: center center;          /* Centre le fond d'ecran */
+    background-repeat: no-repeat;               /* Indique qu'il ne faut pas repeter le fond */
+    height: 78vh;                              /* Défini la hauteur du fond */
+    width: 100%;                              /* Défini la largeur du fond */
+}
+
+/* Style du formulaire *********************************************************************************************************************/
+.backgroundFormRegister{
+    width: 72vh;                             /* Défini la largeur */
+    height: 70vh;                           /* Défini la hauteur */
+    background: rgba(0, 0, 0, 0.5);      /* Défini la couleur et l'opacité */
+    margin: 0 auto;                       /* Centre le formulaire */
+    margin-top: 1vh;
+    padding: 1vh;                        /* Défini le rembourrage */
+    border-radius: 5vh;                 /* Défini l'arrondissement des bordures du formulaire */
+    color: white;                    /* Défini la couleur de la police */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}
+
+/* Style du label nom ************************************************************************************************************************/
+.lnom{
+    margin-left: 2vh;   /* Défini la marque comparer a l'element HTML de gauche */
+    font-weight: bold; /* Défini la police en gras */
+    font-size: 15px;  /* Défini la taille de la police */
+}
+
+/* Style du champ nom **************************************************************************************************************************/
+.inputNom{
+    background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
+    height: 6vh;               /* Défini la hauteur */
+}
+
+.inputNom::placeholder{
+    color: #fd6d14;         /* Défini le changement de couleur de la police */
+}
+
+/* Style du label prenom ************************************************************************************************************************/
+.lprenom{
+    margin-left: 28vh;    /* Défini la marque comparer a l'element HTML de gauche */
+    padding-bottom: 1vh; /* Défini le rembourrage */
+    font-weight: bold;  /* Défini la police en gras */
+    font-size: 15px;   /* Défini la taille de la police */
+}
+
+/* Style du champ Prenom *************************************************************************************************************************/
+.inputPrenom{
+    background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
+    height: 6vh;               /* Défini la hauteur */
+    margin-left: 2vh;         /* Défini la marque comparer a l'element HTML de gauche */
+}
+
+.inputPrenom::placeholder{
+    color: #fd6d14;         /* Défini le changement de couleur de la police */
+}
+
+/* Style conteneur label et input email ********************************************************************************************************/
+.shapeEmail{
+    display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+}
+
+/* Style du label email ************************************************************************************************************************/
+.lemail{
+    margin-top: 5vh;       /* Défini la marque comparer a l'element HTML du haut */
+    margin-left: 2vh;     /* Défini la marque comparer a l'element HTML de gauche */
+    padding-bottom: 1vh; /* Défini le rembourrage */
+    font-weight: bold;  /* Défini la police en gras */
+    font-size: 15px;   /* Défini la taille de la police */
+}
+
+/* Style du champ email **************************************************************************************************************************/
+.inputmail{
+    background-color: #303236;  /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    border-radius: 5vh;          /* Défini l'arrondissement des bordures de l'input */
+    height: 6vh;                /* Défini la hauteur */
+    width: 67vh;               /* Défini la hauteur */
+    margin-bottom: 5vh;       /* Défini la marque comparer a l'element HTML du bas */
+}
+
+.inputmail::placeholder{
+    color: #fd6d14;         /* Défini le changement de couleur de la police */
+}
+
+/* Style du label mot de passe *******************************************************************************************************************/
+.lmdp{
+    padding-bottom: 1vh; /* Défini le rembourrage vers le bas */
+    margin-left: 2vh;   /* Défini la marque comparer a l'element HTML de gauche */
+    font-weight: bold; /* Défini la police en gras */
+    font-size: 15px;  /* Défini la taille de la police */
+}
+
+/* Style des span lié aux mot de passe **********************************************************************************************************/
+.spanFormShape{
+    margin-left: 2vh;         /* Défini la marque comparer a l'element HTML de gauche */
+    display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne vertical */
+    margin-bottom: 5vh;    /* Défini la marque comparer a l'element HTML du bas */
+    font-size: 12px;      /* Défini la taille de la police */
+}
+
+/* Style du span6 *******************************************************************************************************************************/
+.span6{
+    padding-bottom: 1vh; /* Défini le rembourrage */
+}
+
+/* Style du champ password *********************************************************************************************************************/
+.inputPwd{
+    background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
+    height: 6vh;               /* Défini la hauteur */
+}
+
+.inputPwd::placeholder{
+    color: #fd6d14;         /* Défini le changement de couleur de la police */
+}
+
+/* Style du champ Confirmation password ********************************************************************************************************/
+.inputConfirmPwd{
+    background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
+    height: 6vh;               /* Défini la hauteur */
+    margin-left: 2vh;         /* Défini la marque comparer a l'element HTML de gauche */
+}
+
+.inputConfirmPwd::placeholder{
+    color: #fd6d14;         /* Défini le changement de couleur de la police */
+}
+
+/* Style du bouton confirmer *********************************************************************************************************************/
+.inputConfirmer{
+    margin-top: 5vh;               /* Défini la marge par rapport a l'element du haut */
+    margin-left: 27vh;            /* Défini la marge par rapport a l'element de gauche */
+    background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    color: white;             /* Change la couleur de la police */
+    font-weight: bold;         /* Défini la police en gras */
+    font-size: 2.26vh;        /* Défini la taille de la police */
+    border-radius: 5vh;      /* Défini l'arrondissement des bordures de l'input */
+    padding: 1vh;           /* Défini le rembourrage */
+}
+
+/* Style des messages d'erreur *******************************************************************************************************************/
+.messageErreur{
+    font-style: italic; /* Défini le style de la police sur italique */
+    color: red;      /* Change la couleur de la police */
+}
