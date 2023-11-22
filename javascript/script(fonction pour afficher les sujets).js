@@ -16,14 +16,16 @@ function afficherSujets() {
   sujets.forEach((sujet, index) => {
     let sujetDiv = document.createElement("div");
     let lienSujet = document.createElement("a");
+
     lienSujet.href = "sujet.html";
+    lienSujet.innerHTML = '<i class="fa-solid fa-folder"></i>';
     lienSujet.textContent = sujet.titre;
 
     // Alterne entre les couleurs de fond
     sujetDiv.style.backgroundColor = couleurIndex % 2 === 0 ? "#363e49" : "#2e3238";
     couleurIndex++;
 
-    // Définir la hauteur à 80px
+    // Défini la hauteur à 80px
     sujetDiv.style.height = "80px"; 
 
     // Utilise display: flex pour centrer verticalement le lien
