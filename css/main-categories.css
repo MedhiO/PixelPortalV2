@@ -2,15 +2,14 @@
 main{
     background-color: #22252a; /* Défini la couleur du background */
     color: white;             /* Défini la couleur de la police */
-    font-weight: bold;
+    font-weight: bold;         /* Défini la police en gras */
 }
-
 
 /* Style du deconnexion */
 .deconnexion{
-    display: flex;          /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
-    flex-direction: row;   /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
-    cursor: pointer;      /* Modifie le curseur au moment du survol de la zone deconnnexion */
+    display: flex;                /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row-reverse; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    cursor: pointer;            /* Modifie le curseur au moment du survol de la zone deconnnexion */
 }
 
 /* Style de l'affichage des données */
@@ -22,17 +21,48 @@ main{
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
 
-.thead{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #272a30;
-    font-size: 2.5em;
-    margin-top: 20px;
+.listeSujet{
+    margin-left: 50px;   /* Défini la marge vers la gauche */
+    margin-right: 50px; /* Défini la marge vers la droite */
 }
 
-.sujet{
-    background-color: aqua;
+.thead{
+    display: flex;                    /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;             /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    justify-content: space-between; /* Défini l'espacement de l'affichage des données */
+    background-color: #272a30;   /* Défini la couleur du background */
+    font-size: 2.5em;             /* Défini la taille de la police */
+    margin-top: 20px;            /* Défini la marge vers le haut */
+    margin-left: 50px;          /* Défini la marge vers la gauche */
+    margin-right: 50px;        /* Défini la marge vers la droite */
+}
+
+.h2C{
+    margin-left: 50px;   /* Défini la marge vers la gauche */
+    font-size: 40px;    /* Défini la taille de la police */
+    font-weight: bold; /* Défini la police en gras */
+}
+
+.nouveauSujet{
+    display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne verticalement */
+    margin-left: 50px;     /* Défini la marge vers la gauche */
+    margin-right: 50px;   /* Défini la marge vers la droite */
+}
+
+.boutonCategories{
+    margin-left: 50px; /* Défini la marge vers la gauche */
+}
+
+.sujetTitre{
+    background-color: #2e3238; /* Défini la couleur du background */
+    margin-bottom: 10px;        /* Défini la marge vers le bas */
+    border: none;
+}
+
+.textaera{
+    background-color: #2e3238; /* Défini la couleur du background */
+    border: none;
 }
 
 /* Style Responsive **************************************************************************************************************************/
