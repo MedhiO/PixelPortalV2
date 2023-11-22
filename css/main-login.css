@@ -1,4 +1,4 @@
-/* Style du body *****************************************************************************************************************************/
+/* Style du body ***************************************************************************************************/
 main {
     background-image: url(../images/metalgearsolid.jpg);   /* Défini le chemin de l'image de background */
     background-position: center top;                      /* Centre le fond d'ecran */
@@ -8,22 +8,22 @@ main {
  }
 
  .eye{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: flex;             /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;      /* Défini la direction du flex ici en ligne */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;    /*Centre verticalement */
  }
 
  .fa-eye-slash{
-    display: none;
-    visibility: hidden;
+    display: none;       /* Défini que l'icone d'oeil barré pas affiché */
+    visibility: hidden; /* Défini que l'icone d'oeil barré est caché */
 }
 
 .fa-eye{
-    display: block;
+    display: block; /* Défini que l'icone d'oeil est affiché */
 }
 
-/* Forme du body *****************************************************************************************************************************/
+/* Forme du body */
  .shapeBody{
     display: flex;                       /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
     flex-direction: row;                /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne vertical */
@@ -34,55 +34,59 @@ main {
     padding-left: 10vh;            /* Défini le rembourrage vers la gauche */
  }
 
-/* Forme de la partie connexion ****************************************************************************************************************/
+/* Forme de la partie connexion */
  .shapeConnexion{
     display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
     flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne vertical */
  }
 
-/* Style du label ****************************************************************************************************************************/
+/* Style du label */
  .identify{
     font-weight: bold; /* Défini la police en gras */
     font-size: 40px;  /* Défini la taille de la police */
     padding: 1vh;    /* Défini le rembourrage */
  }
 
-/* Style de l'input email *****************************************************************************************/
+/* Style de l'input email */
  .email2{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     margin: 1vh;                /* Défini la marge */
-    width: 80vh;               /* Défini la largeur */
+    width: 60vh;               /* Défini la largeur */
     height: 12vh;             /* Défini la hauteur */
     border: none;            /* Supprime la bordure */
 }
 
-/* Style de l'input1 *********************************************************************************************/
+/* Style de l'input1 */
 .input1{
-    background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
-    padding-left: 2vh;          /* Défini le rembourrage sur la gauche */
+    background-color: #303236;       /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    padding-left: 2vh;                /* Défini le rembourrage sur la gauche */
+    display: flex;                   /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;            /*Indique la direction du flex ici en ligne */
+    justify-content: start center; /*Centre horizontalement */
+    align-items: center;          /*Centre verticalement */
 }
 
-/* Style du separateur *******************************************************************************************/
+/* Style du separateur */
 .separateur{
     padding: 1vh; /* Défini le rembourrage */
 }
 
-/* Style de l'input password *******************************************************************************************************************/
+/* Style de l'input password */
 .password2{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     margin: 1vh;                /* Défini la marge */
-    width: 80vh;               /* Défini la largeur */
+    width: 60vh;               /* Défini la largeur */
     height: 12vh;             /* Défini la hauteur */
     border: none;            /* Supprime la bordure */
 }
 
-/* Style de l'input2 ********************************************************************************************/
+/* Style de l'input2 */
 .input2{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     padding-left: 2vh;          /* Défini le rembourrage sur la gauche */
 }
 
-/* Style du bouton valider *********************************************************************************************************************/
+/* Style du bouton valider */
  .inputValider{
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
     font-weight: bold;               /* Défini la police en gras */
@@ -97,13 +101,13 @@ main {
     border: none;           /* Supprime la bordure */
 }
 
-/* Style des messages d'erreur *******************************************************************************************************************/
+/* Style des messages d'erreur */
 .messageErreur{
     font-style: italic; /* Défini le style de la police sur italique */
     color: red;      /* Change la couleur de la police */
 }
 
-/* Forme de la créer un compte ******************************************************************************************************************/
+/* Forme de la créer un compte */
  .shapeCreerCompte{
     display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
     flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne vertical */
@@ -111,18 +115,18 @@ main {
     font-weight: bold;    /* Défini la police en gras */
  }
 
- /* Forme du span A ****************************************************************************************************************************/
+ /* Forme du span A */
  .spanA{
     font-size: 24px;      /* Défini la taille de la police */
     padding-bottom: 5vh; /* Défini le rembourrage vers le bas */
  }
 
- /* Forme des span C **************************************************************************************************************************/
+ /* Forme des span C */
  .spanC{
     padding-bottom: 2vh; /* Défini le rembourrage vers le bas */
  }
  
-/* Style du bouton Créer un compte **************************************************************************************************************/
+/* Style du bouton Créer un compte */
  .inputCréerCompte{
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
     font-weight: bold;               /* Défini la police en gras */
@@ -137,24 +141,8 @@ main {
     margin-top: 3vh;        /* Défini la marge par rapport a l'element du haut */
 }
 
-/* Style du footer ******************************************************************************************************************************/
-.footer{
-    background-color: black;             /* Change la couleur du background en black */
-    color: white;                       /* Change la couleur de la police */
-    font-size: 24px;                     /* Défini la taille de la police */
-    text-align: center;                 /* Centre le texte horizontalement */
-    font-family: 'Inter', sans-serif;  /* Défini la famille de police */
-}
-
-/* Style du span1 *******************************************************************************************************************************/
-.span1{
-    font-weight: bold;                 /* Défini la police en gras */
-    font-family: 'Inter', sans-serif; /* Défini la famille de police */
-    font-size: 24px;                 /* Défini la taille de la police */
-}
-
 /* Style Responsive **************************************************************************************************************************/
-@media only screen and (min-width:768px) and (max-width:1023px){ /* Défini le style responsive pour tablette */
+@media only screen and (min-width:768px) and (max-width:1400px){ /* Défini le style responsive pour tablette */
     .shapeBody{
        flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne vertical */
     }
@@ -171,11 +159,11 @@ main {
      }
 
      .input1{
-        width: 100vh; /* Défini la largeur */
+        width: 70vh; /* Défini la largeur */
      }
 
      .input2{
-        width: 100vh; /* Défini la largeur */
+        width: 70vh; /* Défini la largeur */
      }
  }
  
@@ -193,11 +181,11 @@ main {
     }
 
     .input1{
-        width: 60vh; /* Défini la largeur */
+        width: 40vh; /* Défini la largeur */
      }
 
      .input2{
-        width: 60vh; /* Défini la largeur */
+        width: 40vh; /* Défini la largeur */
      }
     
     .password2{
@@ -205,14 +193,14 @@ main {
     }
 
     .inputValider{
-        max-width: 50vh; /* Défini la largeur max */
+        max-width: 40vh; /* Défini la largeur max */
         margin-left: 0; /* Défini la marge avec le premier element a gauche */
 
     }
 
     .shapeCreerCompte{
-        margin-left: 0; /* Défini la marge avec le premier element a gauche */
+        margin-left: 0;    /* Défini la marge avec le premier element a gauche */
         margin-top: 10vh; /* Défini la marge avec le premier element en haut */
-        color: white; /* Change la couleur de la police */
+        color: white;  /* Change la couleur de la police */
      }
  }

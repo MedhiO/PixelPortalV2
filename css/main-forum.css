@@ -6,11 +6,14 @@ main{
     background-repeat: no-repeat;                       /* Indique qu'il ne faut pas repeter le fond */
     height: 87vh;                                      /* Défini la hauteur du fond */
     width: 100%;                                      /* Défini la largeur du fond */
-    color: white;
+    color: white;                                  /* Défini la couleur de la police */
 }
+
+/* Style des titres h1 */
 h1{
-    padding: 1vh;
+    padding: 1vh; /* Défini le padding des titres h1 */
 }
+
 /* Style de l'affichage des données */
 .affichageDonnees{
     display: flex;                        /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
