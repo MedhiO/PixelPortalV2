@@ -10,7 +10,7 @@
     <!-- Défini le lien vers la ressources externe body.css -->
     <link rel="stylesheet" href="../css/body.css">
     <!-- Défini le lien vers la ressources externe header.css -->
-    <link rel="stylesheet" href="../css/header2.css">
+    <link rel="stylesheet" href="../css/header3.css">
     <!-- Défini le lien vers la ressources externe main.css -->
     <link rel="stylesheet" href="../css/main-categories.css">
     <!-- Défini le lien vers la ressources externe footer.css -->
@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Défini le lien vers la ressources externe google font pour la police inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <title>Accueil</title>
+    <title>Categories</title>
 </head>
 <body>
     <!-- Défini le contenu du header -->
@@ -32,13 +32,20 @@
                 <img src="../images/portal2.png" id="portal2" class="img-fluid" alt="portal blue">
             </div>
         </a>
-        <div class="descriptif" id="descriptif">Sujet</div>
+        <div class="descriptif" id="descriptif">Sujet
+            <div class="deconnexion" id="deconnexion">
+                <p>Déconnexion</p>
+                <img src="../images/sortir.png" class="deco" alt="deco">
+            </div>
+        </div>
     </header>
     <!-- Défini le contenu du main -->
     <main>
         <div class="affichageDonnees" id="affichageDonnees"><div class="affichagePrenom" id="affichagePrenom"></div><div class="affichageDate" id="affichageDate"></div><div class="affichageHeureConnexion" id="affichageHeureConnexion"></div></div>
         <div class="bodyCategories" id="bodyCategories">
-            <h1 class="h1C" id="h1C">Sujets</h1>
+            <div class="thead">
+                <h1 class="h1C" id="h1C">Sujets</h1><h1>Auteur</h1><h1>Dernier msg</h1>
+            </div>
             <div class="listeSujet" id="listeSujet"></div>
             <div class="nouveauSujet" id="nouveauSujet">
               <h2 class="h2C" id="h2C">Repondre</h2>
