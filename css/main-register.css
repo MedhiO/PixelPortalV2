@@ -1,4 +1,4 @@
-/* Style du main ****************************************************************************************************************************/
+/* Style du main ****************************************************************************************************/
 main{
     background-image: url('../images/skyrim.jpg'); /* Défini le chemin de l'image de background */
     background-size: cover;                       /* Redimensionne l'image pour qu'elle tienne entierement dans l'element HTML qui la contient */
@@ -8,27 +8,27 @@ main{
     width: 100%;                              /* Défini la largeur du fond */
 }
 
-/* Style du formulaire *********************************************************************************************************************/
+/* Style du formulaire */
 .backgroundFormRegister{
-    width: 72vh;                             /* Défini la largeur */
-    height: 70vh;                           /* Défini la hauteur */
-    background: rgba(0, 0, 0, 0.5);      /* Défini la couleur et l'opacité */
-    margin: 0 auto;                       /* Centre le formulaire */
-    margin-top: 2vh;
-    padding: 2vh;                        /* Défini le rembourrage */
+    width: 60vh;                              /* Défini la largeur */
+    height: 70vh;                            /* Défini la hauteur */
+    background: rgba(0, 0, 0, 0.5);       /* Défini la couleur et l'opacité */
+    margin: 0 auto;                        /* Centre le formulaire */
+    padding: 1vh;                         /* Défini le rembourrage */
+    margin-top: 2vh;                     /* Défini la marge vers le haut */
     border-radius: 5vh;                 /* Défini l'arrondissement des bordures du formulaire */
     color: white;                    /* Défini la couleur de la police */
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
 
-/* Style du label nom ************************************************************************************************************************/
+/* Style du label nom */
 .lnom{
     margin-left: 2vh;   /* Défini la marque comparer a l'element HTML de gauche */
     font-weight: bold; /* Défini la police en gras */
     font-size: 15px;  /* Défini la taille de la police */
 }
 
-/* Style du champ nom **************************************************************************************************************************/
+/* Style du champ nom */
 .inputNom{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
@@ -39,15 +39,15 @@ main{
     color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
-/* Style du label prenom ************************************************************************************************************************/
+/* Style du label prenom */
 .lprenom{
-    margin-left: 28vh;    /* Défini la marque comparer a l'element HTML de gauche */
+    margin-left: 22vh;    /* Défini la marque comparer a l'element HTML de gauche */
     padding-bottom: 1vh; /* Défini le rembourrage */
     font-weight: bold;  /* Défini la police en gras */
     font-size: 15px;   /* Défini la taille de la police */
 }
 
-/* Style du champ Prenom *************************************************************************************************************************/
+/* Style du champ Prenom */
 .inputPrenom{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
@@ -59,13 +59,13 @@ main{
     color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
-/* Style conteneur label et input email ********************************************************************************************************/
+/* Style conteneur label et input email */
 .shapeEmail{
     display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
     flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
 }
 
-/* Style du label email ************************************************************************************************************************/
+/* Style du label email */
 .lemail{
     margin-top: 5vh;       /* Défini la marque comparer a l'element HTML du haut */
     margin-left: 2vh;     /* Défini la marque comparer a l'element HTML de gauche */
@@ -74,12 +74,12 @@ main{
     font-size: 15px;   /* Défini la taille de la police */
 }
 
-/* Style du champ email **************************************************************************************************************************/
+/* Style du champ email */
 .inputmail{
     background-color: #303236;  /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     border-radius: 5vh;          /* Défini l'arrondissement des bordures de l'input */
     height: 6vh;                /* Défini la hauteur */
-    width: 67vh;               /* Défini la hauteur */
+    width: 52vh;               /* Défini la largeur */
     margin-bottom: 5vh;       /* Défini la marque comparer a l'element HTML du bas */
 }
 
@@ -87,7 +87,7 @@ main{
     color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
-/* Style du label mot de passe *******************************************************************************************************************/
+/* Style du label mot de passe */
 .lmdp{
     padding-bottom: 1vh; /* Défini le rembourrage vers le bas */
     margin-left: 2vh;   /* Défini la marque comparer a l'element HTML de gauche */
@@ -95,7 +95,7 @@ main{
     font-size: 15px;  /* Défini la taille de la police */
 }
 
-/* Style des span lié aux mot de passe **********************************************************************************************************/
+/* Style des span lié aux mot de passe */
 .spanFormShape{
     margin-left: 2vh;         /* Défini la marque comparer a l'element HTML de gauche */
     display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
@@ -104,12 +104,12 @@ main{
     font-size: 12px;      /* Défini la taille de la police */
 }
 
-/* Style du span6 *******************************************************************************************************************************/
+/* Style du span6 */
 .span6{
     padding-bottom: 1vh; /* Défini le rembourrage */
 }
 
-/* Style du champ password *********************************************************************************************************************/
+/* Style du champ password */
 .inputPwd{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
@@ -120,7 +120,7 @@ main{
     color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
-/* Style du champ Confirmation password ********************************************************************************************************/
+/* Style du champ Confirmation password */
 .inputConfirmPwd{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
@@ -132,10 +132,10 @@ main{
     color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
-/* Style du bouton confirmer *********************************************************************************************************************/
+/* Style du bouton confirmer */
 .inputConfirmer{
     margin-top: 5vh;               /* Défini la marge par rapport a l'element du haut */
-    margin-left: 27vh;            /* Défini la marge par rapport a l'element de gauche */
+    margin-left: 20vh;            /* Défini la marge par rapport a l'element de gauche */
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     color: white;             /* Change la couleur de la police */
     font-weight: bold;         /* Défini la police en gras */
@@ -144,8 +144,134 @@ main{
     padding: 1vh;           /* Défini le rembourrage */
 }
 
-/* Style des messages d'erreur *******************************************************************************************************************/
+/* Style des messages d'erreur */
 .messageErreur{
     font-style: italic; /* Défini le style de la police sur italique */
     color: red;      /* Change la couleur de la police */
 }
+
+/* Style du footer */
+.footer{
+    background-color: black;             /* Change la couleur du background en black */
+    color: white;                       /* Change la couleur de la police */
+    font-size: 24px;                     /* Défini la taille de la police */
+    text-align: center;                 /* Centre le texte horizontalement */
+    margin-top: 30vh;                  /* Défini la marge entre cette element et l'element qui se trouve au dessus */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}
+
+/* Style du span1 */
+.span1{
+    font-weight: bold;                 /* Défini la police en gras */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+    font-size: 24px;                 /* Défini la taille de la police */
+}
+
+/* Style Responsive **************************************************************************************************************************/
+@media only screen and (min-width:768px) and (max-width:1023px){ /* Défini le style responsive pour tablette */
+    .backgroundFormRegister{
+        width: 45vh;   /* Défini la largeur */
+        height: 60vh; /* Défini la hauteur */
+    }
+
+    .inputNom{
+        border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
+        height: 3vh;       /* Défini la hauteur */
+        max-width: 25vh;  /* Défini la largeur max*/
+        font-size: 12px; /* Défini la taille de la police */
+    }
+
+    .inputPrenom{
+        border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
+        height: 3vh;       /* Défini la hauteur */
+        max-width: 25vh;  /* Défini la largeur max */
+        font-size: 12px; /* Défini la taille de la police */
+    }
+
+    .lprenom{
+        margin-left: 15vh; /* Défini la marque comparer a l'element HTML de gauche */
+    }
+
+    .inputmail{
+        border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
+        height: 3vh;       /* Défini la hauteur */
+        max-width: 40vh;  /* Défini la largeur max */
+        font-size: 12px; /* Défini la taille de la police */
+    }
+
+    .inputPwd{
+        border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
+        height: 3vh;       /* Défini la hauteur */
+        max-width: 25vh;  /* Défini la largeur max */
+        font-size: 12px; /* Défini la taille de la police */
+    }
+
+    .inputConfirmPwd{
+        border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
+        height: 3vh;       /* Défini la hauteur */
+        max-width: 25vh;  /* Défini la largeur max */
+        font-size: 12px; /* Défini la taille de la police */
+    }
+
+    .inputConfirmer{
+        margin-left: 17vh;   /* Défini la marque comparer a l'element HTML de gauche */
+        font-size: 12px;    /* Défini la taille de la police */
+        height: 3vh;       /* Défini la hauteur */
+        max-width: 25vh;  /* Défini la largeur max */
+        min-height: 4vh; /* Défini la hauteur mini */
+    }
+ }
+ 
+ @media only screen and (max-width:767px){ /* Défini le style responsive pour smartphone */
+    .backgroundFormRegister{
+        width: 45vh;   /* Défini la largeur */
+        height: 60vh; /* Défini la hauteur */
+    }
+
+    .inputNom{
+        border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
+        height: 3vh;       /* Défini la hauteur */
+        max-width: 25vh;  /* Défini la largeur max */
+        font-size: 12px; /* Défini la taille de la police */
+    }
+
+    .inputPrenom{
+        border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
+        height: 3vh;       /* Défini la hauteur */
+        max-width: 25vh;  /* Défini la largeur max */
+        font-size: 12px; /* Défini la taille de la police */
+    }
+
+    .lprenom{
+        margin-left: 15vh; /* Défini la marque comparer a l'element HTML de gauche */
+    }
+
+    .inputmail{
+        border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
+        height: 3vh;       /* Défini la hauteur */
+        max-width: 40vh;  /* Défini la largeur max */
+        font-size: 12px; /* Défini la taille de la police */
+    }
+
+    .inputPwd{
+        border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
+        height: 3vh;       /* Défini la hauteur */
+        max-width: 25vh;  /* Défini la largeur max */
+        font-size: 12px; /* Défini la taille de la police */
+    }
+
+    .inputConfirmPwd{
+        border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
+        height: 3vh;       /* Défini la hauteur */
+        max-width: 25vh;  /* Défini la largeur max */
+        font-size: 12px; /* Défini la taille de la police */
+    }
+
+    .inputConfirmer{
+        margin-left: 17vh;   /* Défini la marque comparer a l'element HTML de gauche */
+        font-size: 12px;    /* Défini la taille de la police */
+        height: 3vh;       /* Défini la hauteur */
+        max-width: 25vh;  /* Défini la largeur max */
+        min-height: 4vh; /* Défini la hauteur mini */
+    }
+ }
