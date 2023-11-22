@@ -2,7 +2,9 @@
 main{
     background-color: #22252a; /* Défini la couleur du background */
     color: white;             /* Défini la couleur de la police */
+    font-weight: bold;
 }
+
 
 /* Style du deconnexion */
 .deconnexion{
@@ -18,6 +20,19 @@ main{
     justify-content: space-between;     /* Défini l'espacement de l'affichage des données */
     font-weight: bold;                 /* Défini la police en gras */
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}
+
+.thead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #272a30;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.sujet{
+    background-color: aqua;
 }
 
 /* Style Responsive **************************************************************************************************************************/
