@@ -16,6 +16,7 @@ function afficherSujets() {
   sujets.forEach((sujet, index) => {
     let sujetDiv = document.createElement("div");
     let lienSujet = document.createElement("a");
+    let icon = document.createElement("i");
 
     lienSujet.href = "sujet.html";
     lienSujet.innerHTML = '<i class="fa-solid fa-folder"></i>';
