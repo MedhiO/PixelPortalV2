@@ -4,7 +4,7 @@ main{
     background-size: cover;                       /* Redimensionne l'image pour qu'elle tienne entierement dans l'element HTML qui la contient */
     background-position: center center;          /* Centre le fond d'ecran */
     background-repeat: no-repeat;               /* Indique qu'il ne faut pas repeter le fond */
-    height: 78vh;                              /* Défini la hauteur du fond */
+    height: 80vh;                              /* Défini la hauteur du fond */
     width: 100%;                              /* Défini la largeur du fond */
 }
 
@@ -14,8 +14,8 @@ main{
     height: 70vh;                           /* Défini la hauteur */
     background: rgba(0, 0, 0, 0.5);      /* Défini la couleur et l'opacité */
     margin: 0 auto;                       /* Centre le formulaire */
-    margin-top: 1vh;
-    padding: 1vh;                        /* Défini le rembourrage */
+    margin-top: 2vh;
+    padding: 2vh;                        /* Défini le rembourrage */
     border-radius: 5vh;                 /* Défini l'arrondissement des bordures du formulaire */
     color: white;                    /* Défini la couleur de la police */
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
