@@ -17,6 +17,7 @@ function afficherSujets() {
       // Défini l'objet lienSujet comme renvoyant a la page sujet.html
       lienSujet.href = "sujet.html";
       lienSujet.textContent = sujet.titre;
+      sujetDiv.style.backgroundColor = "#363e49";
       // Ajoute le lien à la div
       sujetDiv.appendChild(lienSujet);
       listeSujet.appendChild(sujetDiv);
