@@ -36,12 +36,12 @@
                 <label for="nom" id="lnom" class="lnom">Nom :</label>
                 <label for="prenom" id="lprenom" class="lprenom">Prenom :</label>
                 <div class="nomPrenomForm" id="nomPrenomForm">
-                    <input type="text" class="inputNom" id="nom" placeholder="Saisissez votre nom">
-                    <input type="text" class="inputPrenom" id="prenom" placeholder="Saisissez votre prenom">
+                    <input type="text" class="inputNom" id="nom" name="nomUtilisateur" placeholder="Saisissez votre nom">
+                    <input type="text" class="inputPrenom" id="prenom" name="prenomUtilisateur" placeholder="Saisissez votre prenom">
                 </div>
                 <div class="shapeEmail" id="shapeEmail">
                     <label for="email" id="lemail" class="lemail">Adresse email :</label>
-                    <input type="email" class="inputmail" id="email" placeholder="Saisissez votre email">
+                    <input type="email" class="inputmail" id="email" name="emailUtilisateur" placeholder="Saisissez votre email">
                 </div>
                 <label for="motDePasse" id="mdp" class="lmdp">Mot de passe :</label>
                 <div class="spanFormShape" id="spanFormShape">
@@ -53,8 +53,8 @@
                     <span class="span11" id="span11">1 caractères spécial</span>
                 </div>
                 <div class="mdpForm" id="mdpForm">
-                    <input type="password" class="inputPwd" id="password" placeholder="Créer votre mot de passe">
-                    <input type="password" class="inputConfirmPwd" id="confirmPassword" placeholder="Confirmer le mot de passe">
+                    <input type="password" class="inputPwd" id="password" name="motDePasseUtilisateur" placeholder="Créer votre mot de passe">
+                    <input type="password" class="inputConfirmPwd" id="confirmPassword" name="ConfirmMotDePasseUtilisateur" placeholder="Confirmer le mot de passe">
                 </div>
                 <input type="submit" value="Confirmer" class="inputConfirmer" id="Confirmer">
                 <div id="erreurCompletion" class="messageErreur"></div>
