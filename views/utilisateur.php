@@ -1,5 +1,5 @@
-<?php require_once "../controllers/utilisateurController.php"?>
 <?php require_once "../includes/head.php"?>
+<?php require_once "../controllers/utilisateurController.php"?>
 <table>
 <thead>
 <tr>
@@ -11,7 +11,7 @@
 <td>Prenom utilisateur</td>
 <td>Nom utilisateur</td>
 <td>Email utilisateur</td>
-<td>Mot De passe utilisateur</td>
+<td>Mot de passe utilisateur</td>
 </tr>
 <?php
 //boucle foreach pour afficher chaque ligne de la requête
