@@ -18,7 +18,7 @@ function afficherSujets() {
     let lienSujet = document.createElement("a");
     let icon = document.createElement("i");
 
-    lienSujet.href = "sujet.html";
+    lienSujet.href = "sujet.php";
     lienSujet.innerHTML = '<i class="fa-solid fa-folder"></i>';
     lienSujet.textContent = sujet.titre;
 
