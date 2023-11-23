@@ -32,7 +32,6 @@
     </header>
     <!-- Défini le contenu du main -->
     <main>
-        <?php require_once "../controllers/usersController.php"?>
         <div class="body" id="body">
             <div class="shapeBody" id="shapeBody">
                 <form class="formRegister2" id="formRegister2">
