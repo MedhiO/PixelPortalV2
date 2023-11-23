@@ -1,4 +1,4 @@
-<a href="../index.html">
+<a href="../index.php">
             <div class="entete" id="entete">
                 <img src="../images/portal1.png" id="portal1" class="img-fluid" alt="portal orange">
                 <h1>PIXELPORTAL</h1>
