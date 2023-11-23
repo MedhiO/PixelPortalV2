@@ -26,7 +26,12 @@
     <!-- Défini le contenu du header -->
     <header>
         <?php require_once "../includes/entete.php"?>
-        <div class="descriptif" id="descriptif">Sujet</div>
+        <div class="descriptif" id="descriptif">Sujet
+        <div class="deconnexion" id="deconnexion">
+                <p>Déconnexion</p>
+                <img src="../images/sortir.png" class="deco" alt="deco">
+            </div>
+        </div>
     </header>
     <!-- Défini le contenu du main -->
     <main>
