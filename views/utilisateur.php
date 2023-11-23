@@ -8,10 +8,10 @@
 </thead>
 <tbody>
 <tr>
-<td>Prenom utilisateur</td>
-<td>Nom utilisateur</td>
-<td>Email utilisateur</td>
-<td>Mot de passe utilisateur</td>
+<td>prenomUtilisateur</td>
+<td>nomUtilisateur</td>
+<td>emailUtilisateur</td>
+<td>motDePasseUtilisateur</td>
 </tr>
 <?php
 //boucle foreach pour afficher chaque ligne de la requête
