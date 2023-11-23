@@ -12,7 +12,7 @@ $mdp=$_POST['motDePasseUtilisateur'];
 $req= $con->prepare('INSERT INTO utilisateur (prenomUtilisateur,nomUtilisateur,emailUtilisateur,motDePasseUtilisateur) VALUES (?,?,?,?)');
 //puis on exécute notre requête
 $req->execute(array($prenom,$nom,$email,$mdp));
-//retour sur le tableau des services
-// header('location: services.php');
+//retour sur le tableau des utilisateur
+//header('location: utilisateur.php');
 }
 ?>
