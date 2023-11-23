@@ -21,11 +21,6 @@ foreach($lignes as $ligne){
     <td>'.$ligne['nomUtilisateur'].'</td>
     <td>'.$ligne['emailUtilisateur'].'</td>
     <td>'.$ligne['motDePasseUtilisateur'].'</td>
-    <td><a href="serviceupdate.php?id='.$ligne['noserv'].'">Modifier</a></td>
-    
-    <td><form action="../controllers/deletecontroller.php"
-    method="GET"><button class="btn btn-danger" type="submit" name="del"
-    value='.$ligne['noserv'].' >Supprimer</button></form></td>
     </tr>';
     }
     ?>

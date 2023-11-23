@@ -30,9 +30,8 @@
     </header>
     <!-- Défini le contenu du main -->
     <main>
-        <?php require_once "../controllers/formAddController.php"?>
         <div class="backgroundFormRegister" id="backgroundFormRegister">
-            <form action="#" method="post" class="formRegister" id="formRegister">
+            <form action="../controllers/formAddController.php" method="POST" class="formRegister" id="formRegister">
                 <label for="nom" id="lnom" class="lnom">Nom :</label>
                 <label for="prenom" id="lprenom" class="lprenom">Prenom :</label>
                 <div class="nomPrenomForm" id="nomPrenomForm">
