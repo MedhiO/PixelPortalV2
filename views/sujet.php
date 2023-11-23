@@ -43,7 +43,7 @@
             </div>
             <div class="boutonCategories">
                 <button class="creerSujet" id="creerSujet">POSTER</button>
-                <a href="categories.html"><button class="creerSujet2" id="creerSujet">Retour a la liste<br>des sujets</button></a>
+                <a href="categories.php"><button class="creerSujet2" id="creerSujet">Retour a la liste<br>des sujets</button></a>
             </div>
         </div>
         <div class="bodySujet" id="bodySujet">

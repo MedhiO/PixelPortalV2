@@ -60,7 +60,7 @@
                     <span class="spanA" id="span1">Vous ne possédez pas de compte sur PixelPortal ?</span>
                     <span class="spanC" id="span5">C'est rapide, gratuit, et ca vous permettra de participer sur le forums,</span>
                     <span class="spanC" id="span3">afin que vous puissiez profitez pleinement de notre communauté...</span>
-                    <a href="./register.html"><input type="button" value="Créer un compte" class="inputCréerCompte" id="inputCréerCompte"></a>
+                    <a href="./register.php"><input type="button" value="Créer un compte" class="inputCréerCompte" id="inputCréerCompte"></a>
                 </div>
             </div>
             </div>
