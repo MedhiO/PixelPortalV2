@@ -1,4 +1,4 @@
-<?php require_once "../controllers/deconnexion.php"?>
+<?php require_once "../includes/entete.php"?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
