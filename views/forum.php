@@ -1,3 +1,4 @@
+<?php require_once "../controllers/deconnexion.php"?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
