@@ -15,7 +15,7 @@ if (isset($_SESSION['utilisateur'])) {
         session_destroy();
 
         // Redirige vers la page d'accueil ou toute autre page de connexion
-        header("Location: ../views/logn.php");
+        header("Location: ../views/login.php");
         exit();
     }
 } else {
