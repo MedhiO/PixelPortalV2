@@ -34,18 +34,18 @@
     <main>
         <div class="body" id="body">
             <div class="shapeBody" id="shapeBody">
-                <form class="formRegister2" id="formRegister2">
+                <form class="formRegister2" id="formRegister2" action="../controllers/loginController.php" method="POST">
                     <div class="shapeConnexion" id="shapeConnexion">
                         <label for="identify" class="identify" id="identify">Identifiez vous :</label>
                         <div class="input1" id="input1">
                             <i class="fa-regular fa-user fa-2xl" style="color: #ffffff;"></i>
-                            <input type="email" id="email2" class="email2"  placeholder="Saisissez votre email">
+                            <input type="email" id="email2" class="email2" name="email2" placeholder="Saisissez votre email">
                         </div>
                         <div class="separateur" id="separateur"></div>
                             <div class="input2" id="input2">
                                 <div class="eye">
                                 <i class="fa-solid fa-lock fa-2xl" style="color: #ffffff;"></i>
-                                <input type="password" id="password2" class="password2" placeholder="Saisissez votre mot de passe">
+                                <input type="password" id="password2" class="password2" name="password2" placeholder="Saisissez votre mot de passe">
                                     <i class="fa-regular fa-eye fa-2xl" style="color: #ffffff;"></i>
                                     <i class="fa-regular fa-eye-slash fa-2xl" style="color: #ffffff;"></i>
                                 </div>
@@ -68,5 +68,7 @@
     <?php require_once "../includes/footer.php"?>
     <!-- Défini le chemin vers le script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Défini le chemin vers les autres scripts -->
+    <script src="../javascript/script(affiche-cache mot de passe + switch icone).js"></script>
 </body>
 </html>

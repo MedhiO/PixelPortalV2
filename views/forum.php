@@ -27,7 +27,7 @@
     <header>
         <?php require_once "../includes/entete.php"?>
         <div class="descriptif" id="descriptif">Forum
-            <div class="deconnexion" id="deconnexion">
+            <div class="deconnexion" id="deconnexion" name="deconnexion">
                 <p>Déconnexion</p>
                 <img src="../images/sortir.png" class="deco" alt="deco">
             </div>
