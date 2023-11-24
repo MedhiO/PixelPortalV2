@@ -1,18 +1,41 @@
 <?php
 require_once "../includes/connexiondb.php";
 $con = connectdb();
-//on vérifie si les champs sont remplis
-if(isset($_POST['prenomUtilisateur']) && isset($_POST['nomUtilisateur']) && isset($_POST['emailUtilisateur']) && isset($_POST['motDePasseUtilisateur'])){
-//création des variables pour stocker les données des champs
-$prenom= $_POST['prenomUtilisateur'];
-$nom= $_POST['nomUtilisateur'];
-$email=$_POST['emailUtilisateur'];
-$mdp=$_POST['motDePasseUtilisateur'];
-//on fait notre requête sql avec le prépare
-$req= $con->prepare('INSERT INTO utilisateur (prenomUtilisateur,nomUtilisateur,emailUtilisateur,motDePasseUtilisateur) VALUES (?,?,?,?)');
-//puis on exécute notre requête
-$req->execute(array($prenom,$nom,$email,$mdp));
-//retour sur le tableau des utilisateur
-//header('location: utilisateur.php');
-}
+
+// Vérifie si les champs sont remplis
+if(isset($_POST['nomUtilisateur']) && isset($_POST['prenomUtilisateur']) && isset($_POST['emailUtilisateur']) && isset($_POST['motDePasseUtilisateur']) && isset($_POST['ConfirmMotDePasseUtilisateur'])){
+    $motDePasseRegex = '/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/';
+    // Récupération des valeurs saisies dans le formulaire
+    $nom = $_POST['nomUtilisateur'];
+    $prenom = $_POST['prenomUtilisateur'];
+    $email = $_POST['emailUtilisateur'];
+    $password = $_POST['motDePasseUtilisateur'];
+    $confirmPassword = $_POST['ConfirmMotDePasseUtilisateur'];
+    // Hashage du mot de passe avant l'enregistrement dans la base de données
+    $password = password_hash($password, PASSWORD_DEFAULT);    
+
+    // Enregistrement des valeurs dans la base de données
+    $sql = "INSERT INTO utilisateur (nomUtilisateur, prenomUtilisateur, emailUtilisateur, motDePasseUtilisateur) VALUES ('$nom', '$prenom', '$email', '$password')";
+    // Vérification de la longueur du nom et du prénom
+        if (strlen($nom) < 3 || strlen($prenom) < 3) {
+            echo "Les champs nom et prénom doivent comporter au moins 3 caractères.";
+        } else
+            // Vérification du format de l'email
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                echo "L'email saisi n'est pas au bon format.";
+            } else
+                // Vérification du format du mot de passe
+                if (!preg_match($motDePasseRegex, $password)) {
+                    echo "Le mot de passe saisi n'est pas au bon format.";
+                } else
+                    // Vérification de la similarité des mots de passe
+                    if ($password !== $confirmPassword) {
+                        echo "Les mots de passe ne correspondent pas.";
+                    } else {    
+                        $con->query($sql); 
+                        // Redirection vers la page de connexion 
+                        header("Location: ../views/login.php"); 
+                        exit();
+                        }}
+    echo "Tous les champs doivent être remplis.";
 ?>
