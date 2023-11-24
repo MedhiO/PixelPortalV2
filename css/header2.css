@@ -12,6 +12,7 @@ header {
     align-items: center;      /* Centre verticalement les elements HTML qui compose la flexbox */
     justify-content: center; /* Centre horizontalement les elements HTML qui compose la flexbox */
     font-size: 2.5em;       /* Défini la taille de la police */
+    font-weight: bold;     /* Défini la police en gras */
 }
 /* Style des liens */
 a{
