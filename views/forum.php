@@ -42,7 +42,7 @@
                 <div class="col"></div>
                 <div class="col"></div>
                 <div class="col">
-            <a href="categories.php">
+            <a href="../views/categories.php">
                 <div class="backgroundCategoriesRétro" id="backgroundCategoriesRétro">
                     <h1 class="h1f" id="h1f">Rétrogaming</h1>
                     <p class="p1f" id="p1f">Votre destination ultime pour tout ce qui concerne l'univers des jeux vidéo. Que vous soyez un joueur occasionnel, un passionné ou acharné vous trouverez ici une communauté dynamique et passionnée qui partage votre amour pour les jeux vidéo.</p>
@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col"></div>
                 <div class="col">
-                <a href="categories.php">
+                <a href="../views/categories.php">
                     <div class="backgroundCategoriesGénéral" id="backgroundCategoriesGénéral">
                         <h1 class="h2f" id="h2f">Général jeux vidéo</h1>
                         <p class="p2f" id="p2f">la destination incontournable pour tous les amateurs de jeux vidéo rétro. Si vous avez une passion pour les classiques intemporels, les consoles vintage et les souvenirs de l'âge d'or du gaming, vous êtes au bon endroit.</p>
@@ -67,7 +67,7 @@
                     <div class="col"></div>
                     <div class="col"></div>
                     <div class="col">
-                    <a href="categories.php">
+                    <a href="../views/categories.php">
                     <div class="backgroundCategoriesGuerre" id="backgroundCategoriesGuerre">
                         <h1 class="h3f" id="h3f">Guerre des consoles</h1>
                         <p class="p3f" id="p3f">Plongez dans l'univers passionnant de la rivalité entre les principales consoles de jeu vidéo. Notre forum est le lieu de rencontre idéal pour les fans inconditionnels de Xbox, PlayStation, Nintendo, et bien d'autres, qui souhaitent débattre, comparer et défendre leur console préférée.</p>
