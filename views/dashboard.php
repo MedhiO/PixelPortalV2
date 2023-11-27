@@ -37,7 +37,6 @@
             </form>
         </div>
     </header>
-    <?php require_once "../controllers/dashboardController.php"?>
     <div class="dashboard-container">
     <h2>Bienvenue sur votre tableau de bord</h2>
     <p>Vous pouvez maintenant accéder à toutes les fonctionnalités réservées à nos utilisateurs inscrits.</p>
