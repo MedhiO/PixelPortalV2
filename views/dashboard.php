@@ -1,16 +1,5 @@
-<?php
-session_start();
+<?php ?>
 
-// Vérifier si l'utilisateur est connecté
-if (!isset($_SESSION['user_id'])) {
-    header('Location: ../views/login.php');
-    exit;
-}
-
-?>
-
-<!DOCTYPE html>
-<html lang="fr">
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -42,7 +31,7 @@ if (!isset($_SESSION['user_id'])) {
     <header>
     <?php require_once "../includes/entete.php"?>
         <div class="descriptif" id="descriptif">Tableau de bord
-            <form method="post" action="../controllers/deconnexionController.php">
+            <form method="post" action="../controllers/deconnexionController.php" enctype="multipart/form-data">
                 <input type="submit" name="déconnexion" value="Déconnexion" class="déconnexion">
                 <img src="../images/sortir.png" class="deco" alt="deco">
             </form>
