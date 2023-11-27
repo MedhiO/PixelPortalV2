@@ -1,5 +1,8 @@
 <?php
 
+// Démarre la session
+session_start();
+
 $dossier = '../upload/';
 $fichier = basename($_FILES['avatar']['name']);
 $taille_maxi = 100000;
@@ -25,11 +28,17 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
      if(move_uploaded_file($_FILES['avatar']['tmp_name'], $dossier . $fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
      {
           echo 'Upload effectué avec succès !';
-     }
-     else //Sinon (la fonction renvoie FALSE).
-     {
-          echo 'Echec de l\'upload !';
-     }
+          // Mettez à jour la base de données avec le chemin de l'image
+          $cheminImage = $dossier . $fichier;
+          $userId = $_SESSION['user_id']; // Assurez-vous que vous avez une session utilisateur
+          $updateQuery = "UPDATE utilisateur SET cheminImage = '$cheminImage' WHERE id = $userId";
+          // Executez la requête SQL pour mettre à jour le chemin de l'image
+          // Assurez-vous de disposer d'une connexion à la base de données avant cela
+          // $db->query($updateQuery); // Utilisez la connexion à la base de données
+
+} else {
+    echo 'Echec de l\'upload !';
+}
 }
 else
 {
