@@ -1,4 +1,7 @@
 <?php
+//connexion a la base de données
+require_once "../includes/connexiondb.php";
+$con = connectdb();
 
 // Démarre la session
 session_start();
@@ -31,10 +34,7 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
           // Mettez à jour la base de données avec le chemin de l'image
           $cheminImage = $dossier . $fichier;
           $userId = $_SESSION['user_id']; // Assurez-vous que vous avez une session utilisateur
-          $updateQuery = "UPDATE utilisateur SET cheminImage = '$cheminImage' WHERE id = $userId";
-          // Executez la requête SQL pour mettre à jour le chemin de l'image
-          // Assurez-vous de disposer d'une connexion à la base de données avant cela
-          // $db->query($updateQuery); // Utilisez la connexion à la base de données
+          $updateQuery = "UPDATE image SET cheminImage = '$cheminImage' WHERE id = $userId";
 
 } else {
     echo 'Echec de l\'upload !';
