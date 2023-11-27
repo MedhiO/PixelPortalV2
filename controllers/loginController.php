@@ -10,9 +10,8 @@ $pwd2 = $_POST['password2'];
 if (empty($email2) || empty($pwd2)) {
     echo "Veuillez remplir tous les champs.";
 } else {
-
     // Requête SQL pour récupérer les informations stockées dans la base de données
-    $sql = "SELECT emailUtilisateur, motDePasseUtilisateur FROM utilisateur WHERE emailUtilisateur = :email2";
+    $sql = "SELECT idUtilisateur, emailUtilisateur, motDePasseUtilisateur FROM utilisateur WHERE emailUtilisateur = :email2";
 
     $stmt = $con->prepare($sql);
     $stmt->bindParam(':email2', $email2);
@@ -25,6 +24,17 @@ if (empty($email2) || empty($pwd2)) {
         if ($email2 != $row["emailUtilisateur"] || !password_verify($pwd2, $row["motDePasseUtilisateur"])) {
             echo "Les informations saisies sont incorrectes.";
         } else {
+            // Mise à jour de l'heure de connexion dans la base de données
+            $userId = $row["idUtilisateur"];
+            $updateTimeSql = "UPDATE utilisateur SET heureConnexionUtilisateur = NOW() WHERE idUtilisateur = :userId";
+            $updateStmt = $con->prepare($updateTimeSql);
+            $updateStmt->bindParam(':userId', $userId);
+            $updateStmt->execute();
+
+            // Demarre la session utilisateur
+            session_start();
+            $_SESSION['user_id'] = $userId;
+
             // Redirection vers la page forum.php
             header("Location: ../views/forum.php");
             exit();

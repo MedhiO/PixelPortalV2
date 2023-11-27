@@ -1,20 +1,16 @@
 <?php
-require_once "../includes/connexiondb.php";
-$con = connectdb();
-
-// Démarre la session PHP
+// Démarre la session
 session_start();
 
 // Vérifie si l'utilisateur est connecté
-if (isset($_SESSION['utilisateur'])) {
-    // L'utilisateur est connecté
+if (isset($_SESSION['user_id'])) {
 
     // Vérifie si la déconnexion a été demandée
     if (isset($_POST['deconnexion'])) {
-        // Détruit toutes les données de la session
+        // Détruit la session
         session_destroy();
 
-        // Redirige vers la page d'accueil ou toute autre page de connexion
+        // Redirige vers la page de login
         header("Location: ../views/login.php");
         exit();
     }
