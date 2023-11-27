@@ -19,7 +19,7 @@ if (isset($_SESSION['user_id'])) {
     $prenomUtilisateur = $userInfo['prenomUtilisateur'];
     $heureConnexion = $userInfo['heureConnexionUtilisateur'];
 } else {
-    // Si l'utilisateur n'est pas connecté, redirige-le vers la page de connexion
+    // Si l'utilisateur n'est pas connecté, redirige vers la page de connexion
     header("Location: ../views/login.php");
     exit();
 }
