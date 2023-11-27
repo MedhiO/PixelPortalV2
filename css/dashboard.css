@@ -1,0 +1,30 @@
+body {
+    font-family: 'Inter', sans-serif; /* Défini la police a utilisé */
+    background-color: #2e3238;     /* Défini la couleur du background */
+    margin: 0;                      /* Défini la marge */
+    padding: 0;                    /* Défini le rembourrage */
+}
+.dashboard-container {
+    max-width: 800px;                                  /* Défini la largeur max du dashboard */
+    margin: 50px auto;                                /* Défini la marge */
+    background-color: #fff;                        /* Défini la couleur du background du dashboard */
+    padding: 20px 30px;                             /* Défini le rembourrage */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /*Défini l'ombre du dashboard */
+    border-radius: 8px;                           /* Défini le degré d'arrondissement des bords */
+}
+h2 {
+    color: #333; /* Défini la couleur du fond */ 
+}
+p {
+    color: #555; /* Défini la couleur du fond */ 
+}
+a {
+    text-decoration: none; /* Supprime les decorations des liens */
+}
+
+.déconnexion{
+    color: white;             /* Défini la couleur de la police */
+    background-color: black; /* Défini la couleur du background */
+    border: none;             /* Supprime la bordure */
+    font-weight: bold;       /* Défini la police en gras */
+}
