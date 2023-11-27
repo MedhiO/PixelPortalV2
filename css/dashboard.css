@@ -28,3 +28,10 @@ a {
     border: none;             /* Supprime la bordure */
     font-weight: bold;       /* Défini la police en gras */
 }
+
+.deco{
+    display: flex;              /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;       /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    align-items: center;      /* Centre verticalement les elements HTML qui compose la flexbox */
+    justify-content: center; /* Centre horizontalement les elements HTML qui compose la flexbox */
+}
