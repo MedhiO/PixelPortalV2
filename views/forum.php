@@ -28,16 +28,27 @@
     <header>
         <?php require_once "../includes/entete.php"?>
         <div class="descriptif" id="descriptif">Forum
-            <div class="deconnexion" id="deconnexion" name="deconnexion">
-                <p>Déconnexion</p>
+            <form method="post" action="../controllers/deconnexionController.php">
+                <input type="submit" name="deconnexion" value="Déconnexion" class="Déconnexion">
                 <img src="../images/sortir.png" class="deco" alt="deco">
-            </div>
+            </form>
         </div>
     </header>
     <!-- Défini le contenu du main -->
     <main>
+        <?php require_once "../controllers/forumController.php"?>
         <div class="bodyForum" id="bodyForum">
-            <div class="affichageDonnees" id="affichageDonnees"><div class="affichagePrenom" id="affichagePrenom"></div><div class="affichageDate" id="affichageDate"></div><div class="affichageHeureConnexion" id="affichageHeureConnexion"></div></div>
+        <div class="affichageDonnees" id="affichageDonnees">
+                <div class="affichagePrenom" id="affichagePrenom">
+                    <?php echo "Bonjour $prenomUtilisateur"; ?>
+                </div>
+                <div class="affichageDate" id="affichageDate">
+                    <?php echo "Nous sommes le : " . date("d-m-Y"); ?>
+                </div>
+                <div class="affichageHeureConnexion" id="affichageHeureConnexion">
+                    <?php echo "Vous etes connecté depuis : $heureConnexion"; ?>
+                </div>
+            </div>
             <div class="row">
                 <div class="col"></div>
                 <div class="col"></div>
