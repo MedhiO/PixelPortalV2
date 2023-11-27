@@ -40,6 +40,7 @@
     <div class="dashboard-container">
     <h2>Bienvenue sur votre tableau de bord</h2>
     <p>Vous pouvez maintenant accéder à toutes les fonctionnalités réservées à nos utilisateurs inscrits.</p>
+    <p>Si vous le souhaitez vous pouvez egalement vous choisir une image de profil ci dessous :</p>
     <form method="POST" action="../controllers/dashboardController.php" enctype="multipart/form-data">
         <!-- On limite le fichier à 100Ko -->
         <input type="hidden" name="MAX_FILE_SIZE" value="100000">
