@@ -62,3 +62,10 @@ h1{
     font-weight: bold;               /* Défini la police en gras */
 }
 
+.déconnexion{
+    color: white;             /* Défini la couleur de la police */
+    background-color: black; /* Défini la couleur du background */
+    border: none;             /* Supprime la bordure */
+    font-weight: bold;       /* Défini la police en gras */
+}
+
