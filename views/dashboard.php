@@ -32,8 +32,10 @@
     <?php require_once "../includes/entete.php"?>
         <div class="descriptif" id="descriptif">Tableau de bord
             <form method="post" action="../controllers/deconnexionController.php" enctype="multipart/form-data">
-                <input type="submit" name="déconnexion" value="Déconnexion" class="déconnexion">
-                <img src="../images/sortir.png" class="deco" alt="deco">
+                <div class="deco">
+                    <input type="submit" name="déconnexion" value="Déconnexion" class="déconnexion">
+                    <img src="../images/sortir.png" class="deco" alt="deco">
+                </div>
             </form>
         </div>
     </header>
