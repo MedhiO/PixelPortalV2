@@ -48,9 +48,16 @@ if (!isset($_SESSION['user_id'])) {
             </form>
         </div>
     </header>
-<div class="dashboard-container">
+    <?php require_once "../controllers/dashboardController.php"?>
+    <div class="dashboard-container">
     <h2>Bienvenue sur votre tableau de bord</h2>
     <p>Vous pouvez maintenant accéder à toutes les fonctionnalités réservées à nos utilisateurs inscrits.</p>
+    <form method="POST" action="../controllers/dashboardController.php" enctype="multipart/form-data">
+        <!-- On limite le fichier à 100Ko -->
+        <input type="hidden" name="MAX_FILE_SIZE" value="100000">
+        Fichier : <input type="file" name="avatar">
+        <input type="submit" name="envoyer" value="Envoyer le fichier">
+    </form>
 </div>
     <!-- Défini le contenu du footer -->
     <?php require_once "../includes/footer.php"?>
